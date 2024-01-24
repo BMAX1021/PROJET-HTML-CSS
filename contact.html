@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projet.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="IMG/casami logo.png" alt="">
+        </div>
+        <div class="barremenu">
+            <div id="menu">
+        <form action="PRODUITS.html"method="get">
+                    <label for="options">CATEGORIE</label>
+                    <select id="option"name="selectedoption"onchange="this.form.submit()">
+                        <option value="">CLIQUEZ ICI</option>
+                        <option value="">Meubles</option>
+                        <option value="">Electromenagers</option>
+                        <option value=" ">Cuisine et accesoires</option>
+                        <option value="">Audio et video</option>
+                        <option value="">Decoration</option>
+                        <option value="">Climatisation et ventilation</option>
+                        <option value="">Energie et autres</option>
+                    </select>
+                </form>
+            </div>
+        <div class="barre">
+                <label for="search"></label>
+                <input type="search"id="search" name="search">
+                <input type="submit"value="Recherche">
+            </form>
+        </div>
+    </div> 
+    <div id="navpos">
+        <nav>
+            <ul>  
+                <li><a href="ACCUEIL.html">ACCUEIL</a></li> 
+                <li><a href="PRODUITS.html">PRODUITS</a></li>    
+                <li> <a href="MEMBRES.html">MEMBRES</a></li>
+                <li><a href="CONTACT.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+       </header>
+    <section id="imgbackground">
+        <div id="imgcontact">
+            <div>
+                <img src="IMG/img16.jpg" alt="">
+             </div>
+         <div>
+             <img src="IMG/Meubles/position.jpg" alt="">
+    
+         </div>
+         
+        </div>
+    </section>
+    <div class="container">
+        <form action="process_form.php" method="POST">
+            <h2>Contactez-nous</h2>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="affiche">
+            <img src="IMG/casami logo.png" alt="LOGO">
+        </div>
+    <section class="address">
+       
+            <div class="address1"> 
+                <h1>DELMAS</h1>
+                <P>311, Autoroute de Delmas, Delmas 55 <br> Phone : +50941861948 <br>Email : sales@casamihaiti.com</P>
+            </div>
+               <div class="address1">
+                <h1> AEROPORT</h1>
+                <P>55, Boulevard Toussaint Louverture, Route de l'Aeroport <br> Phone : +50947046022 <br>Email : sales@casamihaiti.com</P>
+            </div>
+            <div class="address1">
+                <h1>PETION-VILLE</h1>
+                <P>2 Rue Darguin, Petion-Ville, Haiti<br> Phone : +50941861966 <br>Email : sales@casamihaiti.com</P></div>
+                </div> 
+        <div class="contact">
+            <p><a href="contact.html"> NOUS CONTACTER</a></p>
+
+        </div>
+    </section> 
+        
+     
+        <div id="reference">
+           <h4>Casami Special NOEL 2024 All rights Reserved. Designed by TEAM Dev++</h4>
+        </div>
+     
+    </footer>
+</body>
+</html>
